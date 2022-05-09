@@ -1,13 +1,13 @@
-<div style="margin: 0 10vw">
-  <div style="border-left: 8px solid black; padding: 16px; box-shadow: 0 0 4px rgba(0,0,0,0.3); margin-bottom: 16px">
-    <h2>Your question:</h2>
+<div class="my-container">
+  <div class="card-box">
+    <h3>Your question:</h3>
     <p><%= @question %></p>
   </div>
 
-  <div style="border-left: 8px solid black; padding: 16px; box-shadow: 0 0 4px rgba(0,0,0,0.3)">
-    <h2>Answer:</h2>
+  <div class="card-box coach">
+    <h3>Answer:</h3>
     <p><%= @answer %></p>
   </div>
 
-  <%= link_to "Ask a new question" %>
+  <%= link_to "Ask a new question", ask_path, class: 'btn btn-primary' %>
 </div>
